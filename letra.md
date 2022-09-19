@@ -139,6 +139,3 @@ A partir de este punto solo se realizan actividades de test de sistema, reporte 
 | | Práctica o tecnología de ingeniería de software aplicada en el proyecto
 | | Mostrar ejemplos de aplicación y recomendaciones útiles
 | | Duración aproximada de media hora
-
-
-

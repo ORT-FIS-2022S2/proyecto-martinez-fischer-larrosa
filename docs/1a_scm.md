@@ -1,7 +1,7 @@
 # 1a SCM
 
 ## Repositorio Git
-------------------
+
 ### Creación y uso de repositorios locales y remotos
 
 Para manejar los repositorios locales se plnaifica utilizar Git manejado por GitHub, nos provee un sistema de control de versiones distribuido que permite a nuestro equipo compuesto por 3 desarrolladores trabajar en los mismos documentos de forma simultánea. 
@@ -23,7 +23,7 @@ git clone https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa.gi
 ```
 
 ## Versionado
-------------------
+
 ### Buenas prácticas de versionado
 
 Como buenas prácticas se recomienda utilizar en este proyecto el flujo de Git Flow + los lineamientos de una estrategia Ship/Show/Ask.
@@ -95,7 +95,7 @@ Entonces, ¿qué es Enviar/Mostrar/Preguntar? Fundamentalmente, son dos cosas:
 - Segundo: Una forma más inclusiva y dinámica de ver las estrategias de ramificación. La técnica nos recuerda que el enfoque de cada equipo se encuentra en un continuo en algún lugar entre "Enviar siempre" y "Preguntar siempre". Nos anima a pensar en cada cambio de forma independiente y preguntarnos: ¿debo enviar/ship, mostrar/show o preguntar/ask?
 
 ## Resumen de commits y evolución del proyecto
-------------------
+
 1. Se crearon los primeros commits de prueba
 2. Se crearon branches para documentación (scm, requerimientos, informe)
 

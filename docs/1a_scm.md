@@ -151,10 +151,18 @@ Entonces, ¿qué es Enviar/Mostrar/Preguntar? Fundamentalmente, son dos cosas:
 
 - Segundo: Una forma más inclusiva y dinámica de ver las estrategias de ramificación. La técnica nos recuerda que el enfoque de cada equipo se encuentra en un continuo en algún lugar entre "Enviar siempre" y "Preguntar siempre". Nos anima a pensar en cada cambio de forma independiente y preguntarnos: ¿debo enviar/ship, mostrar/show o preguntar/ask?
 
+## Manejo de issues (problemas)
+
+Para los problemas dados por pruebas unitarias con error u otros GitHub iene integrado un gestor de bugs en forma de Issues que podemos aprovechar en nuestro proyecto. Cada Issue representa un problema o mejora del proyecto. Dentro de cada Issue se pueden poner comentarios en los que informar de los progresos o debatir la mejor forma de solucionarla.
+
+Para crear una nueva Issue, se puede hacer click en "New Issue", donde nos aparece el formulario para rellenar. Desde él podemos añadir un título, una descripción, asignar la Issue a una persona concreta (o varias) y etiquetar la Issue para resolverlo.
+
 ## Resumen de commits y evolución del proyecto
 
 1. Se crearon los primeros commits de prueba
 2. Se crearon branches para documentación (scm, requerimientos, informe)
+3. Se crean ejemplos de Ship Show Ask
+4. Se documenta manejo de issues
 
 _Fuentes_
 - [Ship, Show, Ask - Martin Fowler](https://martinfowler.com/articles/ship-show-ask.html)

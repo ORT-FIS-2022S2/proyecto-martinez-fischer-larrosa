@@ -4,13 +4,13 @@
 
 ### Creación y uso de repositorios locales y remotos
 
-Para manejar los repositorios locales se plnaifica utilizar Git manejado por GitHub, nos provee un sistema de control de versiones distribuido que permite a nuestro equipo compuesto por 3 desarrolladores trabajar en los mismos documentos de forma simultánea. 
+Para manejar los repositorios locales se planifica utilizar Git manejado por GitHub, nos provee un sistema de control de versiones distribuido que permite a nuestro equipo compuesto por 3 desarrolladores trabajar en los mismos documentos de forma simultánea. 
 
 Esto implica que hay un único servidor que contiene todos los archivos, pero que cada vez que se clona un repositorio de este origen centralizado, la totalidad del repositorio se clona localmente en el equipo del desarrollador.
 
 ### Comandos Git ejecutados desde terminal y desde el IDE
 
-Para la creación del Git es neceario
+Para la creación del Git es necesario
 1. Aceptar la invitación a la Organización ORT
 2. Agregar a los integrantes del grupo de desarrollo
 3. Cada desarrollador aceptar la invitación a unirse al repositorio
@@ -33,7 +33,7 @@ git push
 # Traer cambios a repositorio
 git pull
 ```
-> Estos comandos son escenciales para el trabajo con Git, se recomienda a todo el equipo realizar push/pulls para traer los últimos cambios haciendo push con frecuencia asi como los envios de códigos con push con una perioricidad adecuada. Incorporando en los commits la descripción necesaria para generar un historial saludable
+> Estos comandos son esenciales para el trabajo con Git, se recomienda a todo el equipo realizar push/pulls para traer los últimos cambios haciendo push con frecuencia asi como los envíos de códigos con push con una periodicidad adecuada. Incorporando en los commits la descripción necesaria para generar un historial saludable
 
 Para trabajar con branches:
 ```
@@ -61,7 +61,7 @@ Para realizar un Pull Request:
 2. Clonar el repositorio.
 3. Crear una rama nueva (acá sera donde haremos la colaboración)
 4. Realizar el aporte.
-5. Comitear los cambios.
+5. Commitear los cambios.
 6. Subir la rama al repositorio: git push origin [nombre-rama]
 7. Ir a la rama que acabamos de subir a Github y crear el pull request.
 ```
@@ -84,7 +84,7 @@ Combinar estos nos permite commitear a master y/o evitar requerir siempre branch
 ![barco](https://martinfowler.com/articles/ship-show-ask/Ship.png)
 Si se quiere hacer un cambio y este se considera seguro, es posible bajo conciencia de cada desarrollador hacerlo directamente en su línea principal. Cuando hace esto, no se espera ni se pide una revisión del código al ser un incremento pequeño al repositorio. Para poder trabajar sin complicaciones, simplemente se hace el cambio **pero** con todas las técnicas habituales de integración continua para que sea seguro.
 
-A continuació se brindan algunos ejemplos que sirven como "acuerdo" de equipo para distintas situaciones:
+A continuación se brindan algunos ejemplos que sirven como "acuerdo" de equipo para distintas situaciones:
 - Agregué una característica usando un patrón establecido
 - Arreglé un error sin complicaciones
 - Actualicé documentación
@@ -103,7 +103,7 @@ En este punto es donde tomamos la mentalidad de Integración Continua y  hacemos
 Al hacerlo, se ha implementado el cambio rápidamente y al mismo tiempo ha creado un espacio para la retroalimentación y la conversación. El equipo puede recibir una notificación del Pull Request y luego poder revisar lo que se ha hecho.
 De esta manera el equipo puede proporcionar comentarios sobre el enfoque o código, hacer preguntas y aprender de lo que se hizo.
 
-A continuació se brindan algunos ejemplos que sirven como "acuerdo" de equipo para distintas situaciones:
+A continuación se brindan algunos ejemplos que sirven como "acuerdo" de equipo para distintas situaciones:
 - Me gustaría recibir  comentarios sobre cómo se podría mejorar este código
 - Mira este nuevo algoritmo o patrón que usé
 - Refactoricé X para que ahora se vea así
@@ -121,7 +121,7 @@ Aquí hacemos una pausa. Realizamos nuestros cambios en una Branch, abrimos una 
 
 Las herramientas modernas como GitHub que se utilizan en este proyecto para revisión de código ofrecen un gran espacio para este tipo de conversación e incluso puede reunir a todo un equipo para ver una Pull Request y discutirla.
 
-A continuació se brindan algunos ejemplos que sirven como "acuerdo" de equipo para distintas situaciones:
+A continuación se brindan algunos ejemplos que sirven como "acuerdo" de equipo para distintas situaciones:
 - ¿Esto funcionara?
 - ¿Cómo nos sentimos acerca de este nuevo enfoque?
 - Necesito ayuda para hacer esto mejor por favor
@@ -142,12 +142,12 @@ Ejemplo de Ask en el proyecto
 Si bien los Pull Requests pueden ser una forma útil de hablar sobre los cambios, tienen algunos inconvenientes. El Anti Pattern más atractivo es la idea de que pueden reemplazar otras formas de tener una conversación.
 
 Un problema común con la bifurcación es que la gente decide un enfoque sin discutirlo. En el momento en que se abre una Pull Request, se ha invertido tiempo en eso y otros.
-Recordaar que las Pull Requests no son la única forma de hacer Show o Ask. Responda a una llamada o acérquese al escritorio de esa persona. Mostar el trabajo temprano y con frecuencia. Pida ayuda y comentarios pronto y con frecuencia trabajando juntos en las tareas.
+Recordar que las Pull Requests no son la única forma de hacer Show o Ask. Responda a una llamada o acérquese al escritorio de esa persona. Mostrar el trabajo temprano y con frecuencia. Pida ayuda y comentarios pronto y con frecuencia trabajando juntos en las tareas.
 
 ### Conclusión
 Entonces, ¿qué es Enviar/Mostrar/Preguntar? Fundamentalmente, son dos cosas:
 
-- Primero: Un truco para ayudarnos a obtener lo mejor de ambos mundos: Combinar su propia Pull Request sin esperar comentarios, luego pestar atención a los comentarios cuando lleguen.
+- Primero: Un truco para ayudarnos a obtener lo mejor de ambos mundos: Combinar su propia Pull Request sin esperar comentarios, luego prestar atención a los comentarios cuando lleguen.
 
 - Segundo: Una forma más inclusiva y dinámica de ver las estrategias de ramificación. La técnica nos recuerda que el enfoque de cada equipo se encuentra en un continuo en algún lugar entre "Enviar siempre" y "Preguntar siempre". Nos anima a pensar en cada cambio de forma independiente y preguntarnos: ¿debo enviar/ship, mostrar/show o preguntar/ask?
 

@@ -22,6 +22,51 @@ cd ~/Documents/Gits
 git clone https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa.git
 ```
 
+Para esto se utiliza los comandos:
+```
+# Para añadir el archivo modificado
+git add .
+# Commitear archivos
+git commit -m "Cambio documentación elicitación"
+# Enviar cambios al repositorio
+git push
+# Traer cambios a repositorio
+git pull
+```
+> Estos comandos son escenciales para el trabajo con Git, se recomienda a todo el equipo realizar push/pulls para traer los últimos cambios haciendo push con frecuencia asi como los envios de códigos con push con una perioricidad adecuada. Incorporando en los commits la descripción necesaria para generar un historial saludable
+
+Para trabajar con branches:
+```
+# Crear branch
+git branch feature/elicitacion
+# Ceckout main
+git checkout main
+# Merge de cambios con branch main principal
+git merge feature/elicitacion
+```
+> Esto se utiliza principalmente para trabajar en equipo creando branches para aquellos casos que requieran o puedan generar conflicto
+
+Para ver el estado de las acciones en el repositorio:
+```
+# Checkear el estado del repositorio
+git status
+# Ver log del repositorio
+git log
+```
+> Estos comandos son útiles en todo el ciclo de desarrollo
+
+Para realizar un Pull Request:
+```
+1. Hacer un fork del repositorio original con el cual se quiere colaborar.
+2. Clonar el repositorio.
+3. Crear una rama nueva (acá sera donde haremos la colaboración)
+4. Realizar el aporte.
+5. Comitear los cambios.
+6. Subir la rama al repositorio: git push origin [nombre-rama]
+7. Ir a la rama que acabamos de subir a Github y crear el pull request.
+```
+> Estos pasos son útiles en las etapas de Show/Ask descritas en las buenas prácticas de versionado
+
 ## Versionado
 
 ### Buenas prácticas de versionado

@@ -90,6 +90,10 @@ A continuació se brindan algunos ejemplos que sirven como "acuerdo" de equipo p
 - Actualicé documentación
 - Mejoré el código en base a los comentarios
 
+Ejemplo de Ship en el proyecto:
+- Branch → Merge → Main: 
+  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/commit/eafb221cdac1d1331179d9294ea77604eecc46c4
+
 ### Show
 
 ![mostrar](https://martinfowler.com/articles/ship-show-ask/Show.png)
@@ -105,6 +109,10 @@ A continuació se brindan algunos ejemplos que sirven como "acuerdo" de equipo p
 - Refactoricé X para que ahora se vea así
 - Mirá como lo arreglé
 
+Ejemplo de Show en el proyecto
+- Branch → PullRequest (A) → Merge → Main
+  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/2
+
 ### Ask
 
 ![PREGUNTAR](https://martinfowler.com/articles/ship-show-ask/Ask.png)
@@ -118,6 +126,10 @@ A continuació se brindan algunos ejemplos que sirven como "acuerdo" de equipo p
 - ¿Cómo nos sentimos acerca de este nuevo enfoque?
 - Necesito ayuda para hacer esto mejor por favor
 - Terminé por hoy, haré el merge mañana
+
+Ejemplo de Ask en el proyecto
+- Branch → PullRequest (B) → Merge → Main
+  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/3
 
 ### Los acuerdos de equipo (Uso de ramas separadas de 'main')
 

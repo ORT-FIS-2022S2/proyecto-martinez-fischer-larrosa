@@ -40,3 +40,5 @@ Otra tecnica de gran importancia es el analisis de GIU, ingenieria inversa. Esta
 
 En nuestro caso utilizamos 2 ejemplos de aplicaciones: SuperMatch y Penca Ovacion. 
 
+![Alt text](proyecto-martinez-fischer-larrosa-main\docs\bocetosiu\USERPERSONA.jpg")
+

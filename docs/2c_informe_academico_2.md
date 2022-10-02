@@ -4,65 +4,12 @@
 
 Fecha, actividad, esfuerzo, responsable
 
-Fecha | Actividad | Esfuerzo | Responsable
---- | --- | --- | ---
-| Sep 2, 2022 | GIT INIT. | 2d | Todos
-| Sep 15, 2022 | SCM | 4d | G. Martinez
-| Sep 18, 2022 | REQ. ESPEC. 1 | 4d | G. Larrosa
-| Sep 19, 2022 | REQ. ELICI.  | 1d | M. Fischer
-| Sep 25, 2022 | REQ. ESPEC. 2 | 2d | G. Martinez
-| Sep 28, 2022 | REQ. VALID. 1 | 1d | M. Fischer
-| Oct 2, 2022 | REQ. ESPEC. UI | 4d | G. Larrosa
-| Oct 1, 2022 | REQ. VALID. 2 | 1d | M. Fischer
-| Oct 3, 2022 | INF. ACADE. | 2d | G. Martinez
+## Técnicas aplicadas y aprendizajes
 
-## Técnicas aplicadas
-
-- Git Flow + Estrategia Ship / Show / Ask
-- User personas para definir nuestros usuarios de interés para el sistema
-- Elicitación tormenta de ideas e ingeniería inversa
-- User stories para requerimientos
-- Casos de uso detallados para detalle de requerimientos
-- Validación con entrevistas
-
-## Algunos aprendizajes: 
-En este proyecto aprendimos a trabajar de manera colaborativa, partimos por utilizar Git con las funciones usuales para el manejo del repositorio y continuamos aprendiendo el flujo de trabajo denominado Git Flow, posterior a esto dado que somos un equipo de trabajo pequeño nos interesamos en aprender una estrategia llamada Ship / Show / Ask para definir un orden y criterio para manejar las branches.
-
-Dado el tiempo de trabajo para el proyecto y recursos son limitados utilizamos User Personas frente a otras técnicas para desarrollar estratégicamente la web del Mundial adaptado a los requisitos de los usuarios, contar con un diseño centrado en él y la forma de comprender las necesidades y deseos de esos user persona definidos. 
-
-En cuanto a la elicitación nos basamos en dos sistemas (SuperMatch y Penca Ovación) como referencia haciendo ingeniería inversa de lo que comprendemos y relevar detalles internos adicionado a una tormenta de ideas para potenciar con otras funcionalidades útiles a los posibles usuarios que definimos.
-
-Una vez definido el enfoque y los puntos necesarios a cubrir en la web, creamos los casos de uso que nos permitirán priorizar y ejecutar el desarrollo de las funcionalidades de forma organizada y con criterios claros de cumplimiento. 
-
-Adicionalmente realizamos definiciones esquemáticas a nivel de interfaz con bocetos de UI que den una idea general de lo que se espera del sistema, si bien estos pueden tener un cierto nivel de incertidumbre con el sistema una vez finalizado, sirven como una guía general para el desarrollo y tareas de relevamiento a medida que se van perfeccionando las ideas con más claridad.
-
-Finalmente, realizamos una validación con una técnica más tradicional, utilizando una entrevista con una persona real . Y de esta forma darle más certeza a los user persona definidos.
 
 ## Presentación en clase
 
-Para la presentación en clase realizaremos una práctica con la estrategia de SCM que utilizamos y aplicamos en el proyecto
+Práctica o tecnología de ingeniería de software aplicada en el proyecto
+Mostrar ejemplos de aplicación y recomendaciones útiles
 
-Realizamos algnso ejemplos útiles en el Git que servirán como material de apoyo:
-
-Ejemplo de **Ship** en el proyecto:
-- Branch → Merge → Main: 
-  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/commit/eafb221cdac1d1331179d9294ea77604eecc46c4
-
-Ejemplo de **Show** en el proyecto
-- Branch → PullRequest (A) → Merge → Main
-  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/2
-
-Ejemplo de **Ask** en el proyecto
-- Branch → PullRequest (B) → Merge → Main
-  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/3
-
-Y otros ejemplos de Ask del equipo:
-- Agregamos documentación de elicitacion (incompleta todavía) 
-  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/4
-- Agregar especificación a develop 
-  - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/5 
-
-
-###  Material para la presentación
-Para hacer una introducción de este punto que consideramos de valor a la clase, creamos una presentación general con algunas reflexiones y una demo real de como la trabajamos nosotros:
-- https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/docs/presentaciones/ORT - Presentación de valor para la clase.pdf
+Adjuntar material usado para la presentación

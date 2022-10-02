@@ -19,7 +19,6 @@ Entrega 1
 * [1b Requerimientos - Elicitación](docs/1b_requerimientos_elicitacion.md)
 * [1b Requerimientos - Especificación](docs/1b_requerimientos_especificacion.md)
 * [1b Requerimientos - Validación](docs/1b_requerimientos_validacion.md)
-* [1b Requerimientos](docs/1b_requerimientos.md)
 * [1c Informe académico 1](docs/1c_informe_academico_1.md)
 
 Entrega 2

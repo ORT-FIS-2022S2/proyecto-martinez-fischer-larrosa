@@ -17,7 +17,7 @@ La documentación y los informes académicos para cada entrega se realizan en ar
 Entrega 1
 * [1a SCM](docs/1a_scm.md)
 * [1b Requerimientos - Elicitación](docs/1b_requerimientos_elicitacion.md)
-* [1b Requerimiento - Especificación](docs/1b_requerimientos_especificacion.md)
+* [1b Requerimientos - Especificación](docs/1b_requerimientos_especificacion.md)
 * [1b Requerimientos - Validación](docs/1b_requerimientos_validacion.md)
 * [1b Requerimientos](docs/1b_requerimientos.md)
 * [1c Informe académico 1](docs/1c_informe_academico_1.md)

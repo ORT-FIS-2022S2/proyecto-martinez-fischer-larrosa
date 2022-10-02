@@ -49,11 +49,15 @@ En nuestro caso utilizamos 2 ejemplos de aplicaciones: SuperMatch y Penca Ovacio
 
 SuperMatch es una aplicacion orientada a realizar apuestas de partidos de diferentes deportes, donde el que mas se destaca es el futbol. Nos intereso esta app ya que a la hora de hacer una apuesta, es lo mismo que predecir el resulado de un partido pero de forma paga. Para esto lo que hicimos fue obtener las diferentes opciones de apuesta que la app brindaba (por ejemplo marcar el resultado exacto de un partido, o la cantidad de goles totales del partido, o cuantos goles por tiempo, entre muchas otras cosas) y poder tomar ideas para usar como predicciones.
 
-Por otro lado teniamos penca ovacion que es la app que mas se acerca a lo que queremos crear. En esta app vos te creas una cuenta y podes pronosticar resultados de partidos y a su vez muestra los fixtures.
+Por otro lado teniamos penca ovacion que es la app que mas se acerca a lo que queremos crear. En esta app vos te creas una cuenta y podes pronosticar resultados de partidos y tambien muestra los fixtures. En la misma vos podes competir contra amigos o otras personas, lo cual se puede elegir, y hacer a la vez en varios grupos de personas. Es una buena aplicacion para competir contra amigos y ver quien sabe mas de futbol.
 
 Esta bueno tener la posibilidad de analizar otras aplicaciones. Estas nos brindan datos e informacion que nos puede ser muy relevante a la hora de tomar ideas para un proyecto.
 
 
+## Modelo conceptual
 
+IMAGEN MODELO CONCEPTUAL
+
+## Fuentes de informacion
 
 

@@ -202,9 +202,10 @@
 * 3.1 No hay apuestas o usuarios o resultados: se emite un mensaje 'faltan datos suficientes para generar puntajes' 
 * 5.1 No confirma el resultado: se emite un mensaje 'se cancelaron los puntaje generados, puede volver a generarlos luego' 
 # Bocetos de IU
+* Lo pensamos como una aplicación SPA, por esto nos quedan estos bocetos sencillos de la aplicación.
+* En pocas palabras, SPA son las siglas de Single Page Application. Es un tipo de aplicación web donde todas las pantallas las muestra en la misma página, sin recargar el navegador.
 ### Como usuario administrador:
-![](bocetosiu/FixtureAdmin.png)
+![](bocetosiu/FixtureAdmin(Final).png)
 ---
 ### Como usuario final:
-![](bocetosiu/FixtureUserFinal.png)
-
+![](bocetosiu/FixtureUserFinal(Final).png)

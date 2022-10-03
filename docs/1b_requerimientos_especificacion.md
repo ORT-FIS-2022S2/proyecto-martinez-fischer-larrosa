@@ -35,7 +35,6 @@
 * RNF6: El tiempo de aprendizaje del sistema por un usuario deberá ser menor a 3 horas.
 ## Seguridad
 * RNF7: La longitud de las contraseñas del sistema deben tener mínimo 8 caracteres y debe incluir símbolos, al menos una mayúscula y al menos un número.
-
 # User Stories
 | Titulo | Prioridad |
 | ---------- | ----------: |
@@ -139,13 +138,6 @@
 * Debe verse una tabla con usuarios y puntaje.
 * Debe establecerse un criterio preciso y justo de puntaje según los resultados.
 * No puede haber ambigüedades, en caso de dos usuarios con misma predicción se toma el primero que lo ingresó.
-
-# Use Cases Detallados
-| Caso de Uso | Requerimiento Asociado | Finalidad |
-| ---------- | ----------: | ---------- |
-| Dar de alta un partido en el sistema  | RF7: Alta de un partido | Ingresar un partido al fixture|
-#### **Actor**: Usuario final
-#### **Pre Condiciones**:
 1) Debe de haberse dado de alta un árbitro al menos para asignarle al partido
 2) Debe de haberse dado de alta un estadio al menos para asignarle al partido
 #### **Post Condiciones**:
@@ -211,9 +203,8 @@
 * 5.1 No confirma el resultado: se emite un mensaje 'se cancelaron los puntaje generados, puede volver a generarlos luego' 
 # Bocetos de IU
 ### Como usuario administrador:
-
 ![](bocetosiu/FixtureAdmin.png)
 ---
 ### Como usuario final:
-
 ![](bocetosiu/FixtureUserFinal.png)
+

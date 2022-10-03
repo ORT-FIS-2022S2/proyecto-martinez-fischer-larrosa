@@ -38,6 +38,10 @@ Adicionalmente realizamos definiciones esquemáticas a nivel de interfaz con boc
 
 Finalmente, realizamos una validación con una técnica más tradicional, utilizando una entrevista con una persona real . Y de esta forma darle más certeza a los user persona definidos.
 
+## Reflexiones personales
+
+Juan Mateo Fischer: Al principio me costo un poco acostumbrarme a trabajar con git y github, pero por suerte pude acomodarme rapidamente. El sistema de git me parece una muy buena tecnica para poder trabajar en grupo ya que en ningun momento tuvimos ningun conflicto a la hora de modificar archivos entre nosotros. Al principio nos pusimos a plantear todas las ideas juntos y luego nos separamos ramas especificas para trabajar cada uno separado. Por mi parte trabaje en el md de la elicitacion y la validalidacion, aunque las ideas las planteabamos entre los tres. Luego de commitear, lo que hacia era crear pulls requests a develop y mergearlo cuando ambos, Gabriel y Gonzalo, lo aprobaran.
+
 ## Presentación en clase (1)
 
 Para la presentación en clase realizaremos una práctica con la estrategia de SCM que utilizamos y aplicamos en el proyecto

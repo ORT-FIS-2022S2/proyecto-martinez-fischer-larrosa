@@ -158,6 +158,7 @@ Para los problemas dados por pruebas unitarias con error u otros GitHub iene int
 Para crear una nueva Issue, se puede hacer click en "New Issue", donde nos aparece el formulario para rellenar. Desde él podemos añadir un título, una descripción, asignar la Issue a una persona concreta (o varias) y etiquetar la Issue para resolverlo.
 
 ## Resumen de commits y evolución del proyecto (Pull Requests)
+1. Primer versión Master #15
 1. Merge user persona 2 #14 
 1. Cambios en los requerimientos funcionales #13 
 1. Cambios en los bocetos de la app #12
@@ -169,6 +170,11 @@ Para crear una nueva Issue, se puede hacer click en "New Issue", donde nos apare
 1. Agregamos documentacion de elicitacion (incompleta todavia) #4
 1. Ejemplos de Ship Show Ask #3
 1. Agregar comandos y explicación de como se utilizan en el ciclo de dev #2 
+
+** Por buen orden hicimos un resumen de Pull Request que aportan y agrupan varios commits a un nivel mas global del proyecto, ya que los commits son muchos para permitirnos documentarlo adecuadamente.
+
+A su vez elaboramos un diagrama que permite observar la evolución del proyecto siguiendo la estrategia planteada:
+![](bocetosiu/FlujoBranchesMerges.png)
 
 _Fuentes_
 - [Ship, Show, Ask - Martin Fowler](https://martinfowler.com/articles/ship-show-ask.html)

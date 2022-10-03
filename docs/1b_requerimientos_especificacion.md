@@ -3,26 +3,26 @@
 ## Especificación
 ---
 # Requerimientos Funcionales
-* RF1: Crear un usuario.
-* RF2: Eliminar un usuario.
-* RF3: Login.
-* RF4: Alta de de un equipo.
-* RF5: Alta de un estadio.
-* RF6: Alta de un arbitro.
-* RF7: Alta de un partido.
-* RF8: Eliminar un partido.
-* RF9: Ingresar manualmente un pronostico a un partido.
-* RF10 Ingresar aleatoriamente un pronóstico a un partido.
-* RF11: Editar el pronostico de un partido.
-* RF12: Mostrar el fixture por grupos del mundial.
-* RF13: Mostrar el fixture por dia.
-* RF14: Mostrar tabla de puntos de cada grupo.
-* RF15: Buscador de partidos.
-* RF16: Activar notificaciones de un partido.
-* RF17: Poder seleccionar uno o varios equipos favoritos para que nos lleguen notificaciones con noticias de estos.
-* RF18: Ingresar el resultado y novedades de un partido como administrador.
-* RF19: Ranking de usuarios por sus predicciones al finalizar el mundial.
-* RF20: Sección de noticias sobre el mundial.
+* RF1: El sistema deberá proveer un alta de usuario mediante un formulario controlando que todos los datos necesarios esten completos y correctos.
+* RF2: El sistema deberá proveer una baja de usuario mediante un formulario controlando que todos los datos necesarios esten completos y correctos.
+* RF3: El sistema deberá proveer un login mediante un formulario validando que los datos necesarios esten completos y sean correctos. 
+* RF4: El sistema deberá proveer el alta de un equipo de fútbol mediante un formulario controlando que todos los datos necesarios esten completos y correctos.
+* RF5: El sistema deberá proveer el alta de un estadio mediante un formulario controlando que todos los datos necesarios esten completos y correctos.
+* RF6: El sistema deberá proveer el alta de un árbitro mediante un formulario controlando que todos los datos necesarios esten completos y correctos.
+* RF7: El sistema deberá proveer el alta de un partido mediante un formulario controlando que todos los datos necesarios esten completos y correctos.
+* RF8: El sistema deberá proveer la baja de un partido mediante un formulario controlando que todos los datos necesarios esten completos y correctos.
+* RF9: El sistema deberá proveer el ingreso del pronostico de un partido manualmente validando que los datos sean correctos.
+* RF10 El sistema deberá proveer el ingreso del pronostico de un partido aleatoreamente validando que los datos sean correctos.
+* RF11: El sistema deberá proveer la edición de un pronostico ya ingresado anteriormente validando los datos ingresados.
+* RF12: El sistema deberá proveer la visualización del fixture ordenado por los grupos del mundial.
+* RF13: El sistema deberá proveer la visualización del fixture ordenado por la fecha actual.
+* RF14: El sistema deberá proveer la visualización de la tabla de puntos de cada grupo del mundial. 
+* RF15: El sistema deberá proveer un buscador de partidos que pueda buscar por equipo o estadio.
+* RF16: El sistema deberá proveer una funcion para activar las notificaciones de un partido "(Goles, Tarjetas, Fines(primer tiempo y partido))".
+* RF17: El sistema deberá proveer una funcion para seleccionar uno o varios equipos favoritos y con esto obtener todas las notificaciones para estos en cada partido que participen "(Goles, Tarjetas, Fines(primer tiempo y partido))".
+* RF18: El sistema deberá proveer el ingreso de un resultado y novedades de un partido como administrador mediante un formulario validando que los datos sean correctos y validos.
+* RF19: El sistema deberá proveer la visualización del Ranking de usuarios por sus predicciones por puntaje desendente.
+* RF20: El sistema deberá proveer la visualización de una sección de noticias del mundial.
 
 # Requerimientos No Funcionales
 ## Eficiencia

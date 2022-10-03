@@ -22,7 +22,7 @@
 * RF17: Poder seleccionar uno o varios equipos favoritos para que nos lleguen notificaciones con noticias de estos.
 * RF18: Ingresar el resultado y novedades de un partido como administrador.
 * RF19: Ranking de usuarios por sus predicciones al finalizar el mundial.
-* RF20: Seccion de noticias sobre el mundial.
+* RF20: Sección de noticias sobre el mundial.
 
 # Requerimientos No Funcionales
 ## Eficiencia

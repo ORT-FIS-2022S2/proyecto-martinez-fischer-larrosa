@@ -12,8 +12,6 @@ Esta bueno usar esta técnica ya que cada uno pudo expresar sus planteos los cua
 
 Logramos llegar a varios acuerdos de ideas como por ejemplo crear un usuario, que se pueda pronosticar partidos de ciertas maneras, entre muchas otras. Pero a su vez hubo una idea en la que no llegamos a estar de acuerdo que era la de habilitar una forma de apostar dinero a la hora de pronosticar el resultado de un partido.
 
-![](investigacion/reqs.png)
-
 ### User Persona
 
 En segundo lugar decidimos crear un user persona para mostrar como seria el cliente del producto, y los requerimientos que el mismo exijiría. Aquí una imagen de como quedó el user persona:

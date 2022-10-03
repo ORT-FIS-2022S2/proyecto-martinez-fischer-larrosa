@@ -23,7 +23,6 @@
 * RF18: Ingresar el resultado y novedades de un partido como administrador.
 * RF19: Ranking de usuarios por sus predicciones al finalizar el mundial.
 * RF20: Sección de noticias sobre el mundial.
-
 # Requerimientos No Funcionales
 ## Eficiencia
 * RNF1: Toda funcionalidad del sistema debe responder al usuario en menos de 5 segundos.

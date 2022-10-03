@@ -2,8 +2,6 @@
 
 ## Detalle del trabajo individual
 
-Fecha, actividad, esfuerzo, responsable
-
 Fecha | Actividad | Esfuerzo | Responsable
 --- | --- | --- | ---
 | Sep 2, 2022 | GIT INIT. | 2d | Todos
@@ -40,7 +38,11 @@ Finalmente, realizamos una validación con una técnica más tradicional, utiliz
 
 ## Reflexiones personales
 
-Juan Mateo Fischer: Al principio me costo un poco acostumbrarme a trabajar con git y github, pero por suerte pude acomodarme rapidamente. El sistema de git me parece una muy buena tecnica para poder trabajar en grupo ya que en ningun momento tuvimos ningun conflicto a la hora de modificar archivos entre nosotros. Al principio nos pusimos a plantear todas las ideas juntos y luego nos separamos ramas especificas para trabajar cada uno separado. Por mi parte trabaje en el md de la elicitacion y la validalidacion, aunque las ideas las planteabamos entre los tres. Luego de commitear, lo que hacia era crear pulls requests a develop y mergearlo cuando ambos, Gabriel y Gonzalo, lo aprobaran.
+Juan Mateo Fischer: Al principio me costo un poco acostumbrarme a trabajar con git y github, pero por suerte pude acomodarme rápidamente. El sistema de git me parece una muy buena técnica para poder trabajar en grupo ya que en ningún momento tuvimos ningun conflicto a la hora de modificar archivos entre nosotros. Al principio nos pusimos a plantear todas las ideas juntos y luego nos separamos ramas especificas para trabajar cada uno separado. Por mi parte trabaje en el md de la elicitacion y la validación, aunque las ideas las planteabamos entre los tres. Luego de commitear, lo que hacia era crear pulls requests a develop y mergearlo cuando ambos, Gabriel y Gonzalo, lo aprobaran.
+
+Gabriel Martinez: Trabajar en simultaneo turnando varios puntos fue muy provechoso, algo que en la mayoría de otros proyectos tendemos a separar y trabajar cada uno una parte distinta. De esta forma pudimos aprender cada uno un poco de cada parte.
+Realizar una documentación con este estilo parecido a "Pair Programming" con algunas reviews cruzadas al momento de efectuar la estrategia de trabajo con Git, con Pull Request intentando que todo siga un ciclo y orden bien definido fue en mi opinión muy superior que trabajar con documentos Word y otras métodos más tradicionales.
+Desde mi punto de vista realizarlo de esta manera crea algo parecido a una base de conocimiento, que si bien parte de una especificación de requerimientos, elicitation, validación, etc permite ejecutar todo el proceso de ingeniería y de apoyo para conseguir los objetivos de calidad correctamente.
 
 ## Presentación en clase (1)
 
@@ -65,7 +67,6 @@ Y otros ejemplos de Ask del equipo:
   - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/4
 - Agregar especificación a develop 
   - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/5 
-
 
 ###  Material para la presentación
 Para hacer una introducción de este punto que consideramos de valor a la clase, creamos una presentación general con algunas reflexiones y una demo real de como la trabajamos nosotros:

@@ -1,10 +1,12 @@
 # Repositorio plantilla para proyectos FIS
 
+
 | Identificación del proyecto
 |-----------
 | Fundamentos de Ingeniería de Software
-ID M4A - Docente: Patricia De León
+ID M4A - Docente: Patricia De León, Martin Solari
 Estudiantes: Gabriel Martinez - Gonzalo Larrosa - Mateo Fischer
+Link del repositorio: [Link](https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa)
 
 [Letra](letra.md)
 

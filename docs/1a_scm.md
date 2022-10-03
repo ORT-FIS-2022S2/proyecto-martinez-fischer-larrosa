@@ -157,12 +157,18 @@ Para los problemas dados por pruebas unitarias con error u otros GitHub iene int
 
 Para crear una nueva Issue, se puede hacer click en "New Issue", donde nos aparece el formulario para rellenar. Desde él podemos añadir un título, una descripción, asignar la Issue a una persona concreta (o varias) y etiquetar la Issue para resolverlo.
 
-## Resumen de commits y evolución del proyecto
-
-1. Se crearon los primeros commits de prueba
-2. Se crearon branches para documentación (scm, requerimientos, informe)
-3. Se crean ejemplos de Ship Show Ask
-4. Se documenta manejo de issues
+## Resumen de commits y evolución del proyecto (Pull Requests)
+1. Merge user persona 2 #14 
+1. Cambios en los requerimientos funcionales #13 
+1. Cambios en los bocetos de la app #12
+1. Agregamos los bocetos de ui para la app #10
+1. Pull request de tecnicas de elicitacion y modelo conceptual para mergearlo a develop #8
+1. Pull request (merge validacion a develop) #7
+1. Informe de equipo y presentación #6
+1. Agregar especificacion a develop #5
+1. Agregamos documentacion de elicitacion (incompleta todavia) #4
+1. Ejemplos de Ship Show Ask #3
+1. Agregar comandos y explicación de como se utilizan en el ciclo de dev #2 
 
 _Fuentes_
 - [Ship, Show, Ask - Martin Fowler](https://martinfowler.com/articles/ship-show-ask.html)

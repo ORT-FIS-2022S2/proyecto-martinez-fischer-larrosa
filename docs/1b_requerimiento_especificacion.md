@@ -22,6 +22,7 @@
 * RF17: Poder seleccionar uno o varios equipos favoritos para que nos lleguen notificaciones con noticias de estos.
 * RF18: Ingresar el resultado y novedades de un partido como administrador.
 * RF19: Ranking de usuarios por sus predicciones al finalizar el mundial.
+* RF20: Seccion de noticias sobre el mundial.
 
 # Requerimientos No Funcionales
 ## Eficiencia
@@ -208,4 +209,11 @@
 #### Cursos alternos
 * 3.1 No hay apuestas o usuarios o resultados: se emite un mensaje 'faltan datos suficientes para generar puntajes' 
 * 5.1 No confirma el resultado: se emite un mensaje 'se cancelaron los puntaje generados, puede volver a generarlos luego' 
-<!-- Bocetos de IU -->
+# Bocetos de IU
+### Como usuario administrador:
+
+![mostrar](bocetosiu/FixtureAdmin.png)
+---
+### Como usuario final:
+
+![mostrar](bocetosiu/FixtureUserFinal.png)

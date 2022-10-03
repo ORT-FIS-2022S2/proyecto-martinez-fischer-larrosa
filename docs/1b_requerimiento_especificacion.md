@@ -212,8 +212,8 @@
 # Bocetos de IU
 ### Como usuario administrador:
 
-![mostrar](bocetosiu/FixtureAdmin.png)
+![](bocetosiu/FixtureAdmin.png)
 ---
 ### Como usuario final:
 
-![mostrar](bocetosiu/FixtureUserFinal.png)
+![](bocetosiu/FixtureUserFinal.png)

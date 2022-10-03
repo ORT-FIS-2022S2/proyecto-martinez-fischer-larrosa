@@ -16,7 +16,7 @@ Logramos llegar a varios acuerdos de ideas como por ejemplo crear un usuario, qu
 
 En segundo lugar decidimos crear un user persona para mostrar como seria el cliente del producto, y los requerimientos que el mismo exijiría. Aquí una imagen de como quedó el user persona:
 
-![](bocetosiu\USERPERSONA.jpg)
+![](bocetosiu/USERPERSONA.jpg)
 
 
 ### Entrevista
@@ -58,7 +58,7 @@ Esta bueno tener la posibilidad de analizar otras aplicaciones. Estas nos brinda
 
 Para tener una vista general de lo que queremos llegar, decidimos crear un modelo conceptual de la app, relacionando cada una de las cosas importantes dentro de la aplicación.
 
-![](bocetosiu\Modelo.jpg)
+![](bocetosiu/Modelo.jpg)
 
 ## Fuentes de informacion
 

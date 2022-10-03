@@ -14,6 +14,8 @@ Fecha | Actividad | Esfuerzo | Responsable
 | Oct 1, 2022 | REQ. VALID. 2 | 1d | M. Fischer
 | Oct 3, 2022 | INF. ACADE. | 2d | G. Martinez
 
+* Si bien en estos puntos se detalla la tarea principal del documento cabe aclarar que se trabajó intercambiando ciertas partes de los mismos entre el equipo, como diagramas, checklist de requerimientos y otros puntos necesarios de forma cruzada.
+
 ## Técnicas aplicadas
 
 - Git Flow + Estrategia Ship / Show / Ask

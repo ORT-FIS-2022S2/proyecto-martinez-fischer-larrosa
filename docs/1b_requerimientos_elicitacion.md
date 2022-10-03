@@ -60,4 +60,9 @@ IMAGEN MODELO CONCEPTUAL
 
 ## Fuentes de informacion
 
+User personas - https://workspace44285892.xtensio.com/edit/joue3p59
+
+Supermatch - https://www.supermatch.com.uy/
+
+Penca Ovacion - https://www.elpais.com.uy/ovacion/futbol/futbol-bajate-penca-ovacion-movistar-desafia-todos-tus-amigos.html
 

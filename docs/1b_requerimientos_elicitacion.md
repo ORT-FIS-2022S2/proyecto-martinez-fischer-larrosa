@@ -12,11 +12,18 @@ Esta bueno usar esta técnica ya que cada uno pudo expresar sus planteos los cua
 
 Logramos llegar a varios acuerdos de ideas como por ejemplo crear un usuario, que se pueda pronosticar partidos de ciertas maneras, entre muchas otras. Pero a su vez hubo una idea en la que no llegamos a estar de acuerdo que era la de habilitar una forma de apostar dinero a la hora de pronosticar el resultado de un partido.
 
+![](investigacion/wordcloud.png)
+
 ### User Persona
 
-En segundo lugar decidimos crear un user persona para mostrar como seria el cliente del producto, y los requerimientos que el mismo exijiría. Aquí una imagen de como quedó el user persona:
+En segundo lugar decidimos crear dos users persona para mostrar como serian diferentes visiones como cliente del producto, y los requerimientos que el mismo exijiría. Aquí las imagenes de los perfiles:
 
 ![](bocetosiu/USERPERSONA.jpg)
+![](bocetosiu/user2.jpg)
+
+Por un lado tenemos a un chico joven orientado a que la aplicacion contenga informacion acerca de los partidos y sea de uso facil para cualquier persona. Por otra parte, Marisa es madre de hijos, y ella hace mas enfoque en que haya posibilidad de predicciones con un sistema de competencia para que sus hijos se entretengan con sus amigos.
+
+La idea era poder crear estos perfiles para generar ideas para los requerimientos, y esta bueno hacerlo con 2 personas que sean de edades diferentes y orientaciones diferentes para asi mostrar variedad de ideas.
 
 
 ### Entrevista

@@ -173,7 +173,7 @@ Para crear una nueva Issue, se puede hacer click en "New Issue", donde nos apare
 
 ** Por buen orden hicimos un resumen de Pull Request que aportan y agrupan varios commits a un nivel mas global del proyecto, ya que los commits son muchos para permitirnos documentarlo adecuadamente.
 
-A su vez eaboramos un diagrama que permite observar la evolución del proyecto siguiendo la estrategia planteada:
+A su vez elaboramos un diagrama que permite observar la evolución del proyecto siguiendo la estrategia planteada:
 ![](bocetosiu/FlujoBranchesMerges.png)
 
 _Fuentes_

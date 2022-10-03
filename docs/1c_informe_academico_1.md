@@ -2,8 +2,6 @@
 
 ## Detalle del trabajo individual
 
-Fecha, actividad, esfuerzo, responsable
-
 Fecha | Actividad | Esfuerzo | Responsable
 --- | --- | --- | ---
 | Sep 2, 2022 | GIT INIT. | 2d | Todos
@@ -44,6 +42,10 @@ Finalmente, realizamos una validación con una técnica más tradicional, utiliz
 
 **Gonzalo Larrosa**: Por tema laboral ya conocia git, siempre trabaje con Azure DevOps de Github conocia lo basico, entonces estuvo bueno el aprendizaje e investigar las funcionaledades que tiene. En las primeras reuniones del equipo empezamos a plantear las ideas que tenia cada uno y escuchar la opinion de los demas, despues que nos pusimos de acuerdo como ibamos a trabajar nos dividimos las tareas. En mi caso trabaje con la especificacion del sistema determinando Requerimientos en conjunto con Gabriel y Mateo, luego trabaje en los User Stories y por ultimo los Bocetos UI para la aplicación. Como determinamos trabajar en ramas separtadas nunca tuvimos problemas para ir subiendo nuestros avances, cuando eran cambios chicos iban directo a la rama y si eran cambios mas grandes  se creeaba un pull request para que los compañeros visualizaran los cambios y me dieran el punto bueno para realizar el merge.
 
+**Gabriel Martinez**: Trabajar en simultaneo turnando varios puntos fue muy provechoso, algo que en la mayoría de otros proyectos tendemos a separar y trabajar cada uno una parte distinta. De esta forma pudimos aprender cada uno un poco de cada parte.
+Realizar una documentación con este estilo parecido a "Pair Programming" con algunas reviews cruzadas al momento de efectuar la estrategia de trabajo con Git, con Pull Request intentando que todo siga un ciclo y orden bien definido fue en mi opinión muy superior que trabajar con documentos Word y otras métodos más tradicionales.
+Desde mi punto de vista realizarlo de esta manera crea algo parecido a una base de conocimiento, que si bien parte de una especificación de requerimientos, elicitation, validación, etc permite ejecutar todo el proceso de ingeniería y de apoyo para conseguir los objetivos de calidad correctamente.
+
 ## Presentación en clase (1)
 
 Para la presentación en clase realizaremos una práctica con la estrategia de SCM que utilizamos y aplicamos en el proyecto
@@ -67,7 +69,6 @@ Y otros ejemplos de Ask del equipo:
   - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/4
 - Agregar especificación a develop 
   - https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/pull/5 
-
 
 ###  Material para la presentación
 Para hacer una introducción de este punto que consideramos de valor a la clase, creamos una presentación general con algunas reflexiones y una demo real de como la trabajamos nosotros:

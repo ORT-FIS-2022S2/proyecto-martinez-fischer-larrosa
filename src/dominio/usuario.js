@@ -1,7 +1,7 @@
 export default class Usuario {
 
-    constructor(name, email) {
-      this.name = name;
+    constructor(nombre, email) {
+      this.nombre = nombre;
       this.email = this.setEmail(email);
     }
     /**

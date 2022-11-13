@@ -10,7 +10,7 @@ Definimos el Alcance del Sistema, esto es, de todos los requerimientos especific
     1. Función dar de alta un usuario
     2. Función ingresar un pronóstico (manual o aleatorio)
     3. Función editar un pronostico
-    4. Mostrar el fixture (del día o por grupos) y tabla de resultados
+    4. Mostrar el fixture (del día o por grupos)
 - Momento de realización
     - Fase I (Item 1)
     - Fase II (Item 2 y 3)
@@ -22,7 +22,7 @@ Definimos el Alcance del Sistema, esto es, de todos los requerimientos especific
     1. Función dar de alta un usuario: Tamaño M
     2. Función ingresar un pronóstico (manual o aleatorio): Tamaño L
     3. Función editar un pronostico: Tamaño S
-    4. Mostrar el fixture (del día o por grupos) y tabla de resultados: Tamaño L
+    4. Mostrar el fixture (del día o por grupos): Tamaño L
 - Ajuste y Control de Desarrollo
     - Elaborar la Presentación del Sistema para el Cliente (ORT)
     - Planificación de la Transición

@@ -6,82 +6,36 @@ const app = express()
 
 app.use(express.json())
 
-app.post(`/signup`, async (req, res) => {
-  const { name, email, posts } = req.body
+app.post(`/registro`, async (req, res) => {
+  const { nombre, email } = req.body
 
-  const postData = posts
-    ? posts.map((post) => {
-        return { title: post.title, content: post.content || undefined }
-      })
-    : []
 
-  const result = await prisma.user.create({
+  const result = await prisma.usuario.create({
     data: {
-      name,
-      email,
-      posts: {
-        create: postData,
-      },
+      nombre,
+      email
     },
   })
   res.json(result)
 })
 
-app.post(`/post`, async (req, res) => {
-  const { title, content, authorEmail } = req.body
-  const result = await prisma.post.create({
+app.post(`/pronostico`, async (req, res) => {
+  const { fechaFixtureId, usuarioId, resultado1, resultado2 } = req.body
+  const result = await prisma.pronostico.create({
     data: {
-      title,
-      content,
-      author: { connect: { email: authorEmail } },
+      resultado1,
+      resultado2,
+      usuarioId,
+      fechaFixtureId,
     },
   })
   res.json(result)
 })
 
-app.put('/post/:id/views', async (req, res) => {
+
+app.delete(`/pronostico/:id`, async (req, res) => {
   const { id } = req.params
-
-  try {
-    const post = await prisma.post.update({
-      where: { id: Number(id) },
-      data: {
-        viewCount: {
-          increment: 1,
-        },
-      },
-    })
-
-    res.json(post)
-  } catch (error) {
-    res.json({ error: `Post with ID ${id} does not exist in the database` })
-  }
-})
-
-app.put('/publish/:id', async (req, res) => {
-  const { id } = req.params
-
-  try {
-    const postData = await prisma.post.findUnique({
-      where: { id: Number(id) },
-      select: {
-        published: true,
-      },
-    })
-
-    const updatedPost = await prisma.post.update({
-      where: { id: Number(id) || undefined },
-      data: { published: !postData.published || undefined },
-    })
-    res.json(updatedPost)
-  } catch (error) {
-    res.json({ error: `Post with ID ${id} does not exist in the database` })
-  }
-})
-
-app.delete(`/post/:id`, async (req, res) => {
-  const { id } = req.params
-  const post = await prisma.post.delete({
+  const pronostico = await prisma.pronostico.delete({
     where: {
       id: Number(id),
     },
@@ -89,66 +43,43 @@ app.delete(`/post/:id`, async (req, res) => {
   res.json(post)
 })
 
-app.get('/users', async (req, res) => {
-  const users = await prisma.user.findMany()
-  res.json(users)
+app.get('/usuarios', async (req, res) => {
+  const usuarios = await prisma.usuario.findMany()
+  res.json(usuarios)
 })
 
-app.get('/user/:id/drafts', async (req, res) => {
+app.get('/usuario/:id/pronosticos', async (req, res) => {
   const { id } = req.params
 
-  const drafts = await prisma.user
+  const pronosticosUsuario = await prisma.usuario
     .findUnique({
       where: {
         id: Number(id),
       },
     })
-    .posts({
-      where: { published: false },
-    })
+    .pronosticos()
 
-  res.json(drafts)
+  res.json(pronosticosUsuario)
 })
 
-app.get(`/post/:id`, async (req, res) => {
+app.get(`/pronostico/:id`, async (req, res) => {
   const { id } = req.params
 
-  const post = await prisma.post.findUnique({
+  const pronostico = await prisma.pronostico.findUnique({
     where: { id: Number(id) },
   })
-  res.json(post)
+  res.json(pronostico)
 })
 
-app.get('/feed', async (req, res) => {
-  const { searchString, skip, take, orderBy } = req.query
+app.get('/fixture', async (req, res) => {
+  const { dia, grupo} = req.query //TODO: Falta filtrar!
 
-  const or = searchString
-    ? {
-        OR: [
-          { title: { contains: searchString } },
-          { content: { contains: searchString } },
-        ],
-      }
-    : {}
-
-  const posts = await prisma.post.findMany({
-    where: {
-      published: true,
-      ...or,
-    },
-    include: { author: true },
-    take: Number(take) || undefined,
-    skip: Number(skip) || undefined,
-    orderBy: {
-      updatedAt: orderBy || undefined,
-    },
-  })
-
-  res.json(posts)
+  const fechaFixtures = await prisma.fechaFixture.findMany()
+  res.json(fechaFixtures)
 })
 
 const server = app.listen(3000, () =>
   console.log(`
-🚀 Server ready at: http://localhost:3000
-⭐️ See sample requests: https://github.com/n0v4c4n3/ORT-FIS-Express/blob/master/README.md`),
+🚀 Servidor listo en: http://localhost:3000
+⭐️ Ver ejemplo de requests: https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/tree/main/src/dominio/README.md`),
 )

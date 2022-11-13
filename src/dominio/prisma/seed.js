@@ -2,63 +2,94 @@ const { PrismaClient } = require('@prisma/client')
 
 const prisma = new PrismaClient()
 
-const userData = [
+const fechaFixtureData = [
   {
-    name: 'Alice',
-    email: 'alice@prisma.io',
-    posts: {
-      create: [
-        {
-          title: 'Join the Prisma Slack',
-          content: 'https://slack.prisma.io',
-          published: true,
-        },
-      ],
-    },
+    dia: 1,
+    grupo: 'H',
+    pais1: 'Uruguay',
+    pais2: 'Korea',
+    terminado: false
   },
   {
-    name: 'Nilu',
-    email: 'nilu@prisma.io',
-    posts: {
-      create: [
-        {
-          title: 'Follow Prisma on Twitter',
-          content: 'https://www.twitter.com/prisma',
-          published: true,
-          viewCount: 42,
-        },
-      ],
-    },
+    dia: 5,
+    grupo: 'H',
+    pais1: 'Portugal',
+    pais2: 'Uruguay',
+    terminado: false
   },
   {
-    name: 'Mahmoud',
-    email: 'mahmoud@prisma.io',
-    posts: {
+    dia: 10,
+    grupo: 'H',
+    pais1: 'Ghana',
+    pais2: 'Uruguay',
+    terminado: false
+  }
+]
+
+const usuarioData = [
+  {
+    nombre: 'Alice',
+    email: 'alice@ort.com',
+    pronosticos: {
       create: [
         {
-          title: 'Ask a question about Prisma on GitHub',
-          content: 'https://www.github.com/prisma/prisma/discussions',
-          published: true,
-          viewCount: 128,
+          resultado1: 1,
+          resultado2: 0,
+          fechaFixtureId: 1,
         },
         {
-          title: 'Prisma on YouTube',
-          content: 'https://pris.ly/youtube',
+          resultado1: 0,
+          resultado2: 1,
+          fechaFixtureId: 2,
         },
-      ],
-    },
+        {
+          resultado1: 3,
+          resultado2: 3,
+          fechaFixtureId: 3,
+        }
+      ]
+    }
   },
+  {
+    nombre: 'Nilu',
+    email: 'nilu@ort.com',
+    pronosticos: {
+      create: [
+        {
+          resultado1: 2,
+          resultado2: 3,
+          fechaFixtureId: 1,
+        },
+        {
+          resultado1: 4,
+          resultado2: 1,
+          fechaFixtureId: 2,
+        },
+        {
+          resultado1: 1,
+          resultado2: 4,
+          fechaFixtureId: 3,
+        }
+      ]
+    }
+  }
 ]
 
 async function main() {
-  console.log(`Start seeding ...`)
-  for (const u of userData) {
-    const user = await prisma.user.create({
+  console.log(`Comienzo de seeding ...`)
+  for (const f of fechaFixtureData) {
+    const fechaFixture = await prisma.fechaFixture.create({
+      data: f,
+    })
+    console.log(`Creado fecha con id: ${fechaFixture.id}`)
+  }
+  for (const u of usuarioData) {
+    const usuario = await prisma.usuario.create({
       data: u,
     })
-    console.log(`Created user with id: ${user.id}`)
+    console.log(`Creado usuario con id: ${usuario.id}`)
   }
-  console.log(`Seeding finished.`)
+  console.log(`Seeding terminado.`)
 }
 
 main()

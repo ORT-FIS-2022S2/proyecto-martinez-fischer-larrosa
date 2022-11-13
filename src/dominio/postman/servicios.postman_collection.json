@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "1120c1c7-d8e3-4ec8-a97a-980a84add8da",
+		"name": "ORT - FIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3185451"
+	},
+	"item": [
+		{
+			"name": "Usuarios List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fixture List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/fixture",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fixture"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuarios Pronosticos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/usuario/1/pronosticos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"usuario",
+						"1",
+						"pronosticos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pronostico Obtener",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pronostico/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pronostico",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuario Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"info@gabyrm.com\",\n    \"nombre\": \"Gaby RM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/registro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"registro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pronostico Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"resultado1\": 2,\n    \"resultado2\": 0,\n    \"usuarioId\": 1,\n    \"fechaFixtureId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/pronostico",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pronostico"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,7 +1,7 @@
 @use "@material/theme" with (
-  $primary: #00bcd4,
-  $secondary: #f44336,
-  $background: #c7c7c7,
+  $primary: #1b5e20,
+  $secondary: #0277bd,
+  $background: #ffffff,
 );
 @use '@material/button/mdc-button';
 @use '@material/button';
@@ -21,8 +21,11 @@
 @use "@material/list/mdc-list";
 @use "@material/menu-surface/mdc-menu-surface";
 @use "@material/menu/mdc-menu";
-@use "@material/select/styles";
 @use "@material/snackbar/mdc-snackbar";
+@use "@material/radio/styles";
+@use "@material/form-field";
+
+@include form-field.core-styles;
 
 @include card.core-styles;
 @include textfield.core-styles;
@@ -32,21 +35,10 @@ html {
 }
 
 body {
-  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Roboto;
   margin: 0px auto;
 }
 
-.app-bar {
-  position: absolute;
-}
-
-.mdc-top-app-bar {
-  z-index: 7;
-}
-
-section {
-  text-align: center;
-}
 
 .content {
   margin: 10rem auto;
@@ -54,41 +46,170 @@ section {
   text-align: center;
 }
 
-.sample-content--hidden {
-  display: none;
-}
-
 .mdc-tab {
-    background-color: #67daff;
+  background-color: #c0c0c0;
+  color: #1b5e20;
+  font-weight: bold;
 }
 
-.mdc-tab__content .mdc-tab__text-label {
-    color: black;
+.mdc-tab__text-label{
+  font-family: 'Roboto';
 }
 
-.mdc-text-field {
-    margin: 1rem auto;
+#label1{
+  width: 200px;
 }
 
-.button {
-  margin-top: 1rem;
+img{
+  height: 120px;
+  width: 200px;
 }
 
-.mdc-snackbar__actions .mdc-button__label {
-  color: #67daff;
+.topbar{
+  background-color: #0277bd;
+  height: 160px;
+  width: 100%;
+}
+
+.logo{
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.derecha{
+  float: right;
+  margin-right: 60px;
+}
+
+.usuario{
+  margin-top: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.buscar{
+  margin-top: 10px;
+  width: 180px;
+}
+
+main{
+  width: 100%;
+  float: left;
+}
+
+.seleccion{
+  width: 20%;
+  background-color: #1b5e20;
+  float: left;
+  margin: 1%;
+}
+
+.listapartidos{
+  width: 53%;
+  float: left;
+  margin: 1%;
+  text-align: center;
+}
+
+.ranking{
+  float: right;
+  width: 20%;
+  background-color: #1b5e20;
+  margin: 1%;
+
+}
+
+.gruposIzq{
+  float: left;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.gruposDer{
+  float: right;
+  margin-right: 65px;
+  margin-top: 15px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.listagrupo{
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.mdc-text-field{
+  width: 50px;
+  font-family: Roboto;
 }
 
 
-
-.mdc-card {
-  height: 435px;
-  width: 700px;
-  margin: 0 auto;
-
-  
+nav{
+  background-color: #dbdbdb;
 }
 
-.mdc-card__media-content {
-  background-image: url("https://www.nationalgeographic.com.es/medio/2019/05/30/alan-turing_8c5d84c7_1200x630.jpg");
-  background-size: contain;
+#botonaltaequipo{
+  background-color: white;
+  left: 5%;
+  position: relative;
+}
+
+#botonaltaestadio{
+  background-color: white;
+  left: 25%;
+  position: relative;
+}
+
+#botonaltaarbitro{
+  background-color: white;
+  left: 45%;
+  position: relative;
+}
+
+#botonaltapartido{
+  background-color: white;
+  left: 65%;
+  position: relative;
+}
+
+li{
+  font-style: italic;
+  font-family: Roboto;
+}
+
+.titulotablaranking{
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tabla_ranking{
+  color: #ffffff;
+  td, th{
+    line-height: 60px;
+    width: 250px;
+  }
+  th{
+    font-size: larger;
+  }
+  margin: 50px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.titulogrupo{
+  font-size: larger;
+}
+
+.partidos{
+  margin:0 auto;
+  margin-top: 30px;
+  td{
+    line-height: 90px;
+    width: 130px;
+  }
 }

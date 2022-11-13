@@ -10,6 +10,11 @@
   "author": "FIS",
   "license": "",
   "dependencies": {
+    "@material/button": "^14.0.0",
+    "@material/data-table": "^14.0.0",
+    "@material/menu": "^14.0.0",
+    "@material/radio": "^14.0.0",
+    "@material/textfield": "^14.0.0",
     "material-components-web": "^14.0.0"
   },
   "devDependencies": {

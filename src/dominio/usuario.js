@@ -1,5 +1,15 @@
+/** @module Usuario */
+
+/**
+ * Usuario description.
+ */
 export default class Usuario {
 
+    /**
+     * 
+     * @param {*} nombre 
+     * @param {*} email 
+     */
     constructor(nombre, email) {
       this.nombre = nombre;
       this.email = this.setEmail(email);
@@ -9,8 +19,8 @@ export default class Usuario {
      * @param {*} email
      */
     setEmail(email) {
-      if (email == "hola") {
-        this.email = "mundo";
+      if (email.includes("@")) {
+        return email
       } else {
         throw new Error("Email invalido");
       }

@@ -1,5 +1,6 @@
-const express = require('express')
-const { PrismaClient } = require('@prisma/client')
+import express from 'express'
+import { PrismaClient } from '@prisma/client'
+import Usuario from './usuario.js'
 
 const prisma = new PrismaClient()
 const app = express()
@@ -7,14 +8,14 @@ const app = express()
 app.use(express.json())
 
 app.post(`/registro`, async (req, res) => {
-  const { nombre, email } = req.body
-
+  const { nombre, email } = req.body;
+  const u = new Usuario(nombre, email);
 
   const result = await prisma.usuario.create({
     data: {
-      nombre,
-      email
-    },
+      nombre: u.nombre,
+      email: u.email
+    }
   })
   res.json(result)
 })

@@ -152,25 +152,21 @@ nav{
 }
 
 #botonaltaequipo{
-  background-color: white;
   left: 5%;
   position: relative;
 }
 
 #botonaltaestadio{
-  background-color: white;
   left: 25%;
   position: relative;
 }
 
 #botonaltaarbitro{
-  background-color: white;
   left: 45%;
   position: relative;
 }
 
 #botonaltapartido{
-  background-color: white;
   left: 65%;
   position: relative;
 }
@@ -212,4 +208,34 @@ li{
     line-height: 90px;
     width: 130px;
   }
+}
+
+.eleccion_dia{
+  color: #ffffff;
+  font-weight: bold;
+  margin: 30px;
+  margin-bottom: 100px;
+
+  display: none;
+}
+
+.mdc-button__label{
+  color: #ffffff;
+}
+
+.mdc-button{
+  background-color: #0277bd;
+}
+
+#botonprono{
+  background-color: #1b5e20;
+}
+
+#botonelim{
+  background-color: red;
+  display: none;
+}
+
+#botonedit{
+  display: none;
 }

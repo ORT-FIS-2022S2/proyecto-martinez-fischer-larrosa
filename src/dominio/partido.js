@@ -30,7 +30,7 @@ export default class Partido {
    * @param {*} number
    */
   validResult(number) {
-    if (typeof number === "number") {
+    if (typeof number === "number" || number === null) {
       return number;
     } else {
       throw new Error("No es un número");

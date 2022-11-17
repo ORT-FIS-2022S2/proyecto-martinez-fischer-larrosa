@@ -113,7 +113,7 @@ app.get("/fixture", async (req, res) => {
     const fixtureDia = await prisma.fechaFixture.findMany({
       where: { dia: Number(dia) },
     });
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 0; index < fixtureDia.length; index++) {
       const p = new Partido(
         fixtureDia[index].id,
         fixtureDia[index].dia,
@@ -131,7 +131,7 @@ app.get("/fixture", async (req, res) => {
     const fixtureGrupo = await prisma.fechaFixture.findMany({
       where: { grupo: grupo },
     });
-    for (let index = 0; index < array.length; index++) {
+    for (let index = 0; index < fixtureGrupo.length; index++) {
       const p = new Partido(
         fixtureGrupo[index].id,
         fixtureGrupo[index].dia,

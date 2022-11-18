@@ -86,6 +86,8 @@ Para el frontend utilizamos las siguientes librerias:
 
 ## Interfaz de usuario
 
+![](imgs/interfaz.png)
+
 Para la interfaz de usuario tratamos de guiarnos en el boceto que habiamos diseñado en la especificacion para llegar a lo que queriamos. Nosotros decidimos crear una unica pagina con navegacin en diferentes secciones. Por un lado en el header tenemos un logo del mundial a la iquierda, y al otro extremo un labe que indica que usuario esta ingresado y un buscador (implementado con el estilo de material design) los cuales no tienen funcionalidad al igual que los botones de alta que aparecen debajo.
 
 Dentro del main tenemos 3 secciones. A a izquierda esta el selector de fixture, si lo queremos elegir por dia o por grupo, hecho con una barra de seleccion que encontramos en material design 2, y que aparezcan dichas opciones para elegir con radio buttons de Material design. Luego de haber seleccionado una de las opciones, al centro del main apareceran todos los partidos correspondientes a dicha opcion seleccionada y la posibilidad de pronosticar sobre ellos. Los botones de pronosticar estan basados en la opcion que nos brindaba Material design de los buttons. Por ultimo a la derecha hay una seccion de ranking de usuarios la cual lista todos los usuarios que pronosticaron y su puntaje, pero la misma no esta en funcionamiento.

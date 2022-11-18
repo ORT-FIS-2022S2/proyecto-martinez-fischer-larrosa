@@ -31,7 +31,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/fixture",
+					"raw": "http://localhost:3000/fixture?grupo=H",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -39,6 +39,17 @@
 					"port": "3000",
 					"path": [
 						"fixture"
+					],
+					"query": [
+						{
+							"key": "dia",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "grupo",
+							"value": "H"
+						}
 					]
 				}
 			},
@@ -120,7 +131,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"resultado1\": 2,\n    \"resultado2\": 0,\n    \"usuarioId\": 1,\n    \"fechaFixtureId\": 1\n}",
+					"raw": "{\n    \"resultado1\": 2,\n    \"resultado2\": 0,\n    \"usuarioId\": 1,\n    \"fechaFixtureId\": 2\n}",
 					"options": {
 						"raw": {
 							"language": "json"

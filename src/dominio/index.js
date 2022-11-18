@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import { PrismaClient } from "@prisma/client";
 import Usuario from "./usuario.js";
 import Pronostico from "./pronostico.js";
@@ -8,6 +9,7 @@ const prisma = new PrismaClient();
 const app = express();
 
 app.use(express.json());
+app.use(cors({origin: '*'}));
 
 //Registrar un Usuario.
 app.post(`/registro`, async (req, res) => {

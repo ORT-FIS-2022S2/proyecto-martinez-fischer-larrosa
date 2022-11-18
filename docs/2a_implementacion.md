@@ -31,8 +31,6 @@ Definimos el Alcance del Sistema, esto es, de todos los requerimientos especific
 
 ## Funciones implementadas
 
-Implementación de funciones principales (sin la necesidad de persistencia de datos)
-
 En nuestro decidimos poner en practica algunos de los casos de uso que habiamos definido en la especificacion. Dentro de ellos estan:
 
 - Registrar usuario  

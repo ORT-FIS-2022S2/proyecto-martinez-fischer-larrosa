@@ -83,10 +83,50 @@ Para el frontend utilizamos las siguientes librerias:
 
 ```
 
+### Ejecucion del proyecto
+
+En cuanto a la ejecucion del programa, primero que nada se debe hacer un git clone del proyecto ejecutando el siguiente comando en la consola: 
+```
+git clone https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa.git
+```
+Luego, por un lado se debe acceder a la parte de dominio con el siguiente comando:
+```
+cd src/dominio
+```
+Ahi lo primero que haremos sera instalar los paquetes con el siguiente comando:
+```
+npm install
+```
+Lo siguiente que debemos hacer es crear la base de datos segun la semilla que esta definida para los casos de prueba con la siguiente linea de codigo:
+```
+npx prisma migrate dev --name init
+```
+Ademas es necesario ejecutar la API y levantar los servicios necesarios dejandolos disponibles en el puerto 3000. Para realizar esto corremos lo siguiente:
+```
+npm run dev
+```
+Por ultimo, faltaria la parte de ejecucion de la interfaz de usuario. Para esto primero vamos a ir a la carpeta interfaz de la siguiente manera:
+```
+cd ..
+cd interfaz
+```
+Al llegar a la carpeta ejecutamos las siguientes dos lineas de codigo para instalar los paquetes de la interfaz y que quede en funcionamiento:
+```
+npm install
+npm run start
+```
+Por otro lado, para ejecutar las pruebas y la documentacion utilizamos los siguientes comandos:
+- Para correr pruebas con el usuario:
+```
+npm test
+```
+- Para correr el JSDoc
+```
+npx jsdoc
+
+```
 
 ## Interfaz de usuario
-
-![](imgs/interfaz.png)
 
 Para la interfaz de usuario tratamos de guiarnos en el boceto que habiamos diseñado en la especificacion para llegar a lo que queriamos. Nosotros decidimos crear una unica pagina con navegacin en diferentes secciones. Por un lado en el header tenemos un logo del mundial a la iquierda, y al otro extremo un labe que indica que usuario esta ingresado y un buscador (implementado con el estilo de material design) los cuales no tienen funcionalidad al igual que los botones de alta que aparecen debajo.
 

@@ -126,7 +126,7 @@ npx jsdoc <archivo.js>
 ```
 
 ### Ejecucion de postman
-Dentro de la carpeta src/dominio se encuentra un archivo postman el cual debe ser ejecutado de la siguiente manera: 
+Dentro de la carpeta src/dominio/postman se encuentra un archivo el cual debe ser ejecutado de la siguiente manera: 
 1. Primero abrimos la aplicacion de postman
 2. Luego vamos a file->import y seleccionamos el archivo de la ruta mencionada y le damos aceptar
 
@@ -150,7 +150,7 @@ En base a esto dicho consideramos que logramos cumplir con los estandares de acc
 
 En cuanto a la parte de codificacion, utilizamos Visual Studio Code con Node JS instalado para realizar el proyecto. Dentro de este IDDE realizabamos nuestras modifiaciones de los documentes en difrentes ramas de git. Por un lado separemos en una rama toda la parte de la IU y el frontend y por el otro creamos una rama especifica para el backend y toda la funcionalidad y luego juntabamos todo. A medida que ibamos operando en cada una de las partes fuimos comprobando que cumpla con los estandares de codifiación de Google en cuanto a la parte de HTML, CSS y JavaScript.
 
-Tambien hicimos enfasis en que nuestro codigo quede bien indentado, no aplicamos funciones demasiado largas o complejas, y por ultimo hicimos uso de un linter para que nos tire observaciones en cuanto a errores de formato o calidad de codigo. El que utilizamos para realizar esto fue ESLint
+Tambien hicimos enfasis en que nuestro codigo quede bien indentado, no aplicamos funciones demasiado largas o complejas, y por ultimo hicimos uso de un linter para que nos tire observaciones en cuanto a errores de formato o calidad de codigo. El que utilizamos para realizar esto fue ESLint.
 
 ## Test unitario
 

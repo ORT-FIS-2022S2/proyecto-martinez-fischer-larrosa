@@ -41,7 +41,7 @@ En nuestro decidimos poner en practica algunos de los casos de uso que habiamos 
 - Obtener pronosticos de una fecha
 - Obtener fixture por dia o por grupo
 
-En los casos de registrar usuario, editar y eliminar pronosticos, son servicios que queda expuestos ya que funcionan pero no estaran funcionando dentro de la Interfaz de Usuario.
+En los casos de registrar usuario, obtener lista de usuarios y obtener pronosticos de un usuario son servicios que queda expuestos ya que funcionan pero no estaran funcionando dentro de la Interfaz de Usuario.
 
 Nosotros decidimos ir por el lado de la persistencia de datos y para eso hicimos uso de SQLite para poder crear una base de datos con persistencia. Esta se va a encargar de guardar todos los datos de manera rapida y sin tanta complejidad. Para poder manejar el mapeo entre los objetos y la base de datos utilizamos PRISMA JS. 
 
@@ -97,13 +97,13 @@ Ahi lo primero que haremos sera instalar los paquetes con el siguiente comando:
 ```
 npm install
 ```
-Lo siguiente que debemos hacer es crear la base de datos segun la semilla que esta definida para los casos de prueba con la siguiente linea de codigo:
-```
-npx prisma migrate dev --name init
-```
 Ademas es necesario ejecutar la API y levantar los servicios necesarios dejandolos disponibles en el puerto 3000. Para realizar esto corremos lo siguiente:
 ```
 npm run dev
+```
+En cuanto a la base de datos, la misma ya viene inicializada en el git para facilitar la ejecucion de los servicios. En caso de querer reinicializar la base se debe borrar la carpeta migrations/* y el archivo deb.db y ejecutar el siguiente comando
+```
+npx prisma migrate dev --name init
 ```
 Por ultimo, faltaria la parte de ejecucion de la interfaz de usuario. Para esto primero vamos a ir a la carpeta interfaz de la siguiente manera:
 ```
@@ -115,22 +115,28 @@ Al llegar a la carpeta ejecutamos las siguientes dos lineas de codigo para insta
 npm install
 npm run start
 ```
-Por otro lado, para ejecutar las pruebas y la documentacion utilizamos los siguientes comandos:
+Por otro lado, para ejecutar las pruebas y la documentacion utilizamos los siguientes comandos luego de entrar a la carpeta de dominio como en el segundo paso:
 - Para correr pruebas con el usuario:
 ```
 npm test
 ```
 - Para correr el JSDoc
 ```
-npx jsdoc
-
+npx jsdoc <archivo.js>
 ```
+
+### Ejecucion de postman
+Dentro de la carpeta src/dominio se encuentra un archivo postman el cual debe ser ejecutado de la siguiente manera: 
+1. Primero abrimos la aplicacion de postman
+2. Luego vamos a file->import y seleccionamos el archivo de la ruta mencionada y le damos aceptar
+
+Eso lo que hace es crear una coleccion de servicios de ejemplo programados a cada una de las APIs creadas
 
 ## Interfaz de usuario
 
 Para la interfaz de usuario tratamos de guiarnos en el boceto que habiamos diseñado en la especificacion para llegar a lo que queriamos. Nosotros decidimos crear una unica pagina con navegacin en diferentes secciones. Por un lado en el header tenemos un logo del mundial a la iquierda, y al otro extremo un labe que indica que usuario esta ingresado y un buscador (implementado con el estilo de material design) los cuales no tienen funcionalidad al igual que los botones de alta que aparecen debajo.
 
-Dentro del main tenemos 3 secciones. A a izquierda esta el selector de fixture, si lo queremos elegir por dia o por grupo, hecho con una barra de seleccion que encontramos en material design 2, y que aparezcan dichas opciones para elegir con radio buttons de Material design. Luego de haber seleccionado una de las opciones, al centro del main apareceran todos los partidos correspondientes a dicha opcion seleccionada y la posibilidad de pronosticar sobre ellos. Los botones de pronosticar estan basados en la opcion que nos brindaba Material design de los buttons. Por ultimo a la derecha hay una seccion de ranking de usuarios la cual lista todos los usuarios que pronosticaron y su puntaje, pero la misma no esta en funcionamiento.
+Dentro del main tenemos 3 secciones. A a izquierda esta el selector de fixture, si lo queremos elegir por dia o por grupo y que aparezcan dichas opciones para elegir con radio buttons de Material design. Luego de haber seleccionado una de las opciones, al centro del main apareceran todos los partidos correspondientes a dicha opcion seleccionada y la posibilidad de pronosticar sobre ellos. Los botones de pronosticar estan basados en la opcion que nos brindaba Material design de los buttons. Por ultimo a la derecha hay una seccion de ranking de usuarios la cual lista todos los usuarios que pronosticaron y su puntaje, pero la misma no esta en funcionamiento.
 
 En cuanto a lo solicitado con que sea responsive, tuvimos algunas complicaciones en la implementacion que no permitieron que nos funcione correctamente, pero si logramos cumplir con la especificacion de estilo. Las fuentes estan en Roboto, para la barra del header decidimos utilizar el color secundario y para los botones y las secciones del main el secundario. Los colores Green 900 y Light Blue 800 los buscamos dentro de la pagina web material design y copiamos sus codigos de color.
 
@@ -144,7 +150,7 @@ En base a esto dicho consideramos que logramos cumplir con los estandares de acc
 
 En cuanto a la parte de codificacion, utilizamos Visual Studio Code con Node JS instalado para realizar el proyecto. Dentro de este IDDE realizabamos nuestras modifiaciones de los documentes en difrentes ramas de git. Por un lado separemos en una rama toda la parte de la IU y el frontend y por el otro creamos una rama especifica para el backend y toda la funcionalidad y luego juntabamos todo. A medida que ibamos operando en cada una de las partes fuimos comprobando que cumpla con los estandares de codifiación de Google en cuanto a la parte de HTML, CSS y JavaScript.
 
-Tambien hicimos enfasis en que nuestro codigo quede bien indentado, no aplicamos funciones demasiado largas o complejas,y por ultimo hicimos uso de un linter para que nos tire observaciones en cuanto a errores de formato o calidad de codigo.
+Tambien hicimos enfasis en que nuestro codigo quede bien indentado, no aplicamos funciones demasiado largas o complejas, y por ultimo hicimos uso de un linter para que nos tire observaciones en cuanto a errores de formato o calidad de codigo. El que utilizamos para realizar esto fue ESLint
 
 ## Test unitario
 

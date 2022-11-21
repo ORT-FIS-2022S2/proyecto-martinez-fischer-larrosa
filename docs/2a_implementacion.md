@@ -148,18 +148,26 @@ En base a esto dicho consideramos que logramos cumplir con los estandares de acc
 
 ## Codificación
 
-En cuanto a la parte de codificacion, utilizamos Visual Studio Code con Node JS instalado para realizar el proyecto. Dentro de este IDDE realizabamos nuestras modifiaciones de los documentes en difrentes ramas de git. Por un lado separemos en una rama toda la parte de la IU y el frontend y por el otro creamos una rama especifica para el backend y toda la funcionalidad y luego juntabamos todo. A medida que ibamos operando en cada una de las partes fuimos comprobando que cumpla con los estandares de codifiación de Google en cuanto a la parte de HTML, CSS y JavaScript.
+En cuanto a la parte de codificacion, utilizamos Visual Studio Code con Node JS instalado para realizar el proyecto. Dentro de este IDE realizabamos nuestras modifiaciones de los documentes en difrentes ramas de git. Por un lado separemos en una rama toda la parte de la IU y el frontend y por el otro creamos una rama especifica para el backend y toda la funcionalidad y luego juntabamos todo. A medida que ibamos operando en cada una de las partes fuimos comprobando que cumpla con los estandares de codifiación de Google en cuanto a la parte de HTML, CSS y JavaScript.
 
 Tambien hicimos enfasis en que nuestro codigo quede bien indentado, no aplicamos funciones demasiado largas o complejas, y por ultimo hicimos uso de un linter para que nos tire observaciones en cuanto a errores de formato o calidad de codigo. El que utilizamos para realizar esto fue ESLint.
 
 ## Test unitario
 
-Test unitarios en Jest 
+Para ver si habian errores en nuestras funciones decidimos utilizar testing unitario con Jest. El testing es una herramienta se encarga de identificar defectos o bugs en el proyecto. En este caso particular, el testing unitario se encarga de realizar pruebas en pequeñas funciones del codigo, con el objetivo de encontrar defectos de forma temprana en nuestro codigo, para asi permitirnos arreglar dichos errores, evitando que lleven a mayores. 
 
-Detallar cantidad e incluir ejemplos significativos
+Existen varios frameworks para realizar testing unitario, en nuestro caso hicimos uso de Jest, el cual es un framework para testing unitario que esta disponible para JavaScript. 
 
-100% cobertura en clases de dominio
+Para poder instalarlo lo que hicimos fue ejecutar el siguente comando dentro de la carpeta src/dominio:
+~~~
+npm install --save-dev jest
+~~~
+Para realizar las pruebas se usa el sguiente comando para el archivo seleccionado
+~~~
+npm test
+~~~
 
+En nuestro caso hicimos testing unitario en las clases usuario y pronostico que creamos. Para esto teniamosAlgunos de los comandos utilizados fueron
 
 > ## Code freeze
 > En la semana previa a la entrega final se debe congelar el desarrollo.

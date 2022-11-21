@@ -36,4 +36,5 @@ model FechaFixture {
   resultado1 Int?      
   resultado2 Int? 
   pronosticos Pronostico[]
+  fechaFixtureId Int
 }

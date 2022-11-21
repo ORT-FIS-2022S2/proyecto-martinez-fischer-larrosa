@@ -15,7 +15,7 @@ export default class Partido {
    * @param {*} resultado1
    * @param {*} resultado2
    */
-  constructor(id, dia, grupo, pais1, pais2, terminado, resultado1, resultado2) {
+  constructor(id, dia, grupo, pais1, pais2, terminado, resultado1, resultado2, fechaFixtureId) {
     this.id = id;
     this.dia = dia;
     this.grupo = grupo;
@@ -24,6 +24,7 @@ export default class Partido {
     this.terminado = terminado;
     this.resultado1 = this.validResult(resultado1);
     this.resultado2 = this.validResult(resultado2);
+    this.fechaFixtureId = fechaFixtureId
   }
   /**
    *

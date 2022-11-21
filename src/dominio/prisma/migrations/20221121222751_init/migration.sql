@@ -27,7 +27,8 @@ CREATE TABLE "FechaFixture" (
     "pais2" TEXT NOT NULL,
     "terminado" BOOLEAN NOT NULL DEFAULT false,
     "resultado1" INTEGER,
-    "resultado2" INTEGER
+    "resultado2" INTEGER,
+    "fechaFixtureId" INTEGER NOT NULL
 );
 
 -- CreateIndex

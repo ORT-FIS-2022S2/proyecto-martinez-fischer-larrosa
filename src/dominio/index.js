@@ -124,7 +124,8 @@ app.get("/fixture", async (req, res) => {
         fixtureDia[index].pais2,
         fixtureDia[index].terminado,
         fixtureDia[index].resultado1,
-        fixtureDia[index].resultado2
+        fixtureDia[index].resultado2,
+        fixtureDia[index].fechaFixtureId
       );
       result.push(p);
     }
@@ -142,7 +143,8 @@ app.get("/fixture", async (req, res) => {
         fixtureGrupo[index].pais2,
         fixtureGrupo[index].terminado,
         fixtureGrupo[index].resultado1,
-        fixtureGrupo[index].resultado2
+        fixtureGrupo[index].resultado2,
+        fixtureGrupo[index].fechaFixtureId
       );
       result.push(p);
     }

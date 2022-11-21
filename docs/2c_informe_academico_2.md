@@ -15,4 +15,4 @@ NodeJS es un entorno de ejecucion de JavaScript multiplataforma, de codigo abier
 
 Sirve para ejecutar JavaScript desde nuestro ordenador sin ningun browser. Es ideal para construir aplicaciones altamente escalables y de uso intensivo de operaciones de entrada y salida o para crear sitios web dinamicos muy eficientes escritos en JavaScript.
 
-![Presentacion de NodeJS](presentacionDelGrupo/NODEJS.pdf)
+[Presentacion de NodeJS](presentacionDelGrupo/NODEJS.pdf)

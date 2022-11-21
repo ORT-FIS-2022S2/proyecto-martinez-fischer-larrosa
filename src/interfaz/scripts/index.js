@@ -1,115 +1,139 @@
-import { MDCRipple } from '@material/ripple';
-import { MDCTopAppBar } from '@material/top-app-bar';
-import { MDCTabBar } from '@material/tab-bar';
-import { MDCTextField } from '@material/textfield';
-import { MDCSelect } from '@material/select';
-import {MDCSnackbar} from '@material/snackbar';
-import ListaPeliculas from '../../dominio/lista-peliculas.mjs';
-import Pelicula from '../../dominio/pelicula.mjs';
+console.log("Started up");
 
-const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
-const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
-  return new MDCRipple(el);
-});
+const buttonsGrupo = document.querySelectorAll(".grupo");
+buttonsGrupo.forEach((btn) => btn.addEventListener("click", fixture));
 
+function obtenerResultados() {
+  const fixtureId = parseInt(this.dataset.fixtureid);
+  var requestOptions = {
+    method: "GET",
+  };
+  fetch("http://localhost:3000/usuario/1/pronosticos", requestOptions)
+    .then((response) => response.text())
+    .then((result) => pronosticar(fixtureId, JSON.parse(result)))
+    .catch((error) => console.log("error", error));
+}
 
-const listaPeliculas = new ListaPeliculas();
-
-const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-const topAppBar = new MDCTopAppBar(topAppBarElement);
-
-const tabBar = new MDCTabBar(document.querySelector(".mdc-tab-bar"));
-tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
-  document.querySelectorAll(".content").forEach((element, index) => {
-    if (index === activatedEvent.detail.index) {
-      element.classList.remove("sample-content--hidden");
-    } else {
-      element.classList.add("sample-content--hidden");
-    }
+function pronosticar(fixtureId, resultadosUsuario) {
+  const rA = parseInt(document.getElementById("rA" + fixtureId).value);
+  const rB = parseInt(document.getElementById("rB" + fixtureId).value);
+  console.log("Pronosticar: ", fixtureId, rA, rB);
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  var raw = JSON.stringify({
+    resultado1: rA,
+    resultado2: rB,
+    usuarioId: 1,
+    fechaFixtureId: fixtureId,
   });
-});
+  var requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: raw,
+    redirect: "follow",
+  };
 
-const textFieldTitle = new MDCTextField(document.getElementById('title'));
-const textFieldYear = new MDCTextField(document.getElementById('year'));
-const selectGenre = new MDCSelect(document.querySelector('.mdc-select'));
-
-const addButton = new MDCRipple(document.getElementById('addButton'));
-addButton.listen('click', () => {
-  let title = textFieldTitle.value;
-  let year = textFieldYear.value;
-  let genre = selectGenre.value;
-  borrarCampos();
-
-  try {
-    let newPelicula = new Pelicula(title, genre, year);
-    listaPeliculas.agregar(newPelicula);
-    const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
-    snackbar.labelText = 'Pelicula agregada correctamente';
-    snackbar.open();
-
-  } catch (error) {
-    const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
-    snackbar.labelText = error.message;
-    snackbar.open();
-  } finally {
-    let peliculas = listaPeliculas.getPeliculas();
-    console.log(peliculas);
-    cargarListaPeliculas();
-
-  }
-})
-
-function borrarCampos(){
-  textFieldTitle.value = "";
-  textFieldYear.value = "";
-  selectGenre.value = "";
-}
-
-function cargarListaPeliculas(){
-  let peliculas = listaPeliculas.getPeliculas();
-  let lista = document.getElementById('peliculas');
-  lista.innerHTML = "";
-
-  for(let i = 0; i < peliculas.length; i++){
-    let pelicula = peliculas[i];
-
-    //div principal
-    let fila = document.createElement('div');
-    fila.className = "mdc-card";
-
-    //div primary action
-    let div = document.createElement('div');
-    div.className = "mdc-card__primary-action";
-
-    //info pelicula
-    let informacion = document.createElement("h2")
-    informacion.innerHTML = pelicula.titulo + " (" + pelicula.anio + ")" + " - " + pelicula.genero;
-    div.appendChild(informacion);
-
-    //div mdc-card media square
-    let divMediaSquare = document.createElement('div');
-    divMediaSquare.className = "mdc-card__media mdc-card__media--square";
-    div.appendChild(divMediaSquare);
-
-    //div mdc-card media content
-    let divMediaContent = document.createElement('div');
-    divMediaContent.className = "mdc-card__media-content";
-    divMediaSquare.appendChild(divMediaContent);
-
-    //div mdc ripple
-    let divRipple = document.createElement('div');
-    divRipple.className = "mdc-card__ripple";
-    div.appendChild(divRipple);
-
-    fila.appendChild(div);
-    lista.appendChild(fila);
-
-    let saltoLinea = document.createElement('br');
-    lista.appendChild(saltoLinea);
-    
-    
-
+  let hayResultado = resultadosUsuario.find(
+    (item) => item.fechaFixtureId === fixtureId
+  );
+  if (hayResultado) {
+    alert("Partido ya pronosticado.");
+  } else {
+    fetch("http://localhost:3000/pronostico", requestOptions)
+      .then((response) => response.text())
+      .then((result) => alert(result))
+      .catch((error) => console.log("error", error));
   }
 }
 
+function fixture() {
+  document.getElementById("partidos").innerHTML = "";
+  const grupo = this.dataset.grupo;
+  document.getElementById("grupoTitulo").innerHTML = "Grupo " + grupo;
+  var requestOptions = {
+    method: "GET",
+    redirect: "follow",
+  };
+  fetch("http://localhost:3000/fixture?grupo=" + grupo, requestOptions)
+    .then((response) => response.text())
+    .then((result) => obtenerResultadosFixture(JSON.parse(result)))
+    .catch((error) => console.log("error", error));
+}
 
+function obtenerResultadosFixture(fixture) {
+  var requestOptions = {
+    method: "GET",
+  };
+  fetch("http://localhost:3000/usuario/1/pronosticos", requestOptions)
+    .then((response) => response.text())
+    .then((result) => fixtureParse(fixture, JSON.parse(result)))
+    .catch((error) => console.log("error", error));
+}
+
+function fixtureParse(fixture, resultados) {
+  console.log("Fixture obtenido:" + fixture);
+  var partidos = document.querySelector("#partidos");
+  var template = `<tr class="vs">
+  <td>{pais1}</td>
+  <td><label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+    <span class="mdc-text-field__ripple"></span>
+    <input class="mdc-text-field__input" type="text" value={resultA} aria-label="Label" id="{rA}">
+  </label></td>
+  <td>
+    <div class="mdc-touch-target-wrapper">
+      <button class="mdc-button mdc-button--touch">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__touch"></span>
+        <span class="mdc-button__label pronosticar" data-fixtureId={fixtureId}>Pronosticar</span>
+      </button>
+    </div>
+    <div class="mdc-touch-target-wrapper">
+      <button class="mdc-button mdc-button--touch">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__touch"></span>
+        <span class="mdc-button__label">Editar</span>
+      </button>
+    </div>
+    <div class="mdc-touch-target-wrapper">
+      <button class="mdc-button mdc-button--touch">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__touch"></span>
+        <span class="mdc-button__label">Eliminar</span>
+      </button>
+    </div>
+  </td>
+  <td><label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+    <span class="mdc-text-field__ripple"></span>
+    <input class="mdc-text-field__input" type="text" value={resultB} aria-label="Label" id="{rB}">
+  </label></td>
+  <td>{pais2}</td>
+</tr>`;
+
+  for (var i = 0; i < fixture.length; i++) {
+    var partido = fixture[i];
+    console.log(partido);
+    templateAux = template;
+    templateAux = templateAux.replace(/{pais1}/g, partido.pais1);
+    templateAux = templateAux.replace(/{pais2}/g, partido.pais2);
+    const pronostico = resultados.find(
+      (item) => item.fechaFixtureId === partido.fechaFixtureId
+    );
+    if (pronostico) {
+      templateAux = templateAux.replace(/{resultA}/g, pronostico.resultado1);
+      templateAux = templateAux.replace(/{resultB}/g, pronostico.resultado2);
+    }else{
+      templateAux = templateAux.replace(/{resultA}/g, "-");
+      templateAux = templateAux.replace(/{resultB}/g, "-");
+    }
+
+    templateAux = templateAux.replace(/{rA}/g, "rA" + partido.id);
+    templateAux = templateAux.replace(/{rB}/g, "rB" + partido.id);
+    templateAux = templateAux.replace(/{fixtureId}/g, partido.id);
+    partidos.insertAdjacentHTML("beforeend", templateAux);
+  }
+
+  const buttonsPronosticar = document.querySelectorAll(".pronosticar");
+  buttonsPronosticar.forEach((btn) =>
+    btn.addEventListener("click", obtenerResultados)
+  );
+}

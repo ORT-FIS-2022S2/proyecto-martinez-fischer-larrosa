@@ -1,0 +1,40 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Usuario {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  nombre  String?
+  pronosticos Pronostico[]
+}
+
+model Pronostico {
+  id        Int      @id @default(autoincrement())
+  creacion DateTime @default(now())
+  actualizacion DateTime @updatedAt
+  resultado1 Int?     
+  resultado2 Int?
+  usuario    Usuario    @relation(fields: [usuarioId], references: [id])
+  usuarioId  Int
+  fechaFixture FechaFixture @relation(fields: [fechaFixtureId], references: [id])
+  fechaFixtureId Int
+}
+
+model FechaFixture {
+  id        Int       @id @default(autoincrement())
+  dia Int
+  grupo String
+  pais1     String
+  pais2   String
+  terminado Boolean   @default(false)
+  resultado1 Int?      
+  resultado2 Int? 
+  pronosticos Pronostico[]
+  fechaFixtureId Int
+}

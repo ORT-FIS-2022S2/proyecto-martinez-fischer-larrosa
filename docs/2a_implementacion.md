@@ -167,7 +167,7 @@ Para realizar las pruebas se usa el sguiente comando para el archivo seleccionad
 npm test
 ~~~
 
-En nuestro caso hicimos testing unitario en las clases usuario y pronostico que creamos. Para esto teniamosAlgunos de los comandos utilizados fueron
+En nuestro caso hicimos testing unitario en las clases usuario y pronostico que creamos. Para esto teniamos los archivos pronostico.js y usuario.js, y lo que debiamos hacer era crear los archivos de prueba llamados pronostico.test.js y usuario.test.js. Algunos de los comandos utilizados en estos archivos fueron Test, Expect, toBe, etc para poder ejecutar las pruebas.
 
 > ## Code freeze
 > En la semana previa a la entrega final se debe congelar el desarrollo.

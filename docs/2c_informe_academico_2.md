@@ -9,7 +9,10 @@ Fecha, actividad, esfuerzo, responsable
 
 ## Presentación en clase
 
-Práctica o tecnología de ingeniería de software aplicada en el proyecto
-Mostrar ejemplos de aplicación y recomendaciones útiles
+Nosotros tuvimos que crear la presentacion de NodeJS, el cual fue utilizado en el proyecto.
 
-Adjuntar material usado para la presentación
+NodeJS es un entorno de ejecucion de JavaScript multiplataforma, de codigo abierto, asincronico y orientado a eventos. Los programas escritos en JS son compilados, optimizados e interpretados por la maquina virtual V8 de chrome.
+
+Sirve para ejecutar JavaScript desde nuestro ordenador sin ningun browser. Es ideal para construir aplicaciones altamente escalables y de uso intensivo de operaciones de entrada y salida o para crear sitios web dinamicos muy eficientes escritos en JavaScript.
+
+![Presentacion de NodeJS](presentacionDelGrupo/NODEJS.pdf)

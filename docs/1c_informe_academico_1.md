@@ -74,4 +74,4 @@ Y otros ejemplos de Ask del equipo:
 
 ###  Material para la presentación
 Para hacer una introducción de este punto que consideramos de valor a la clase, creamos una presentación general con algunas reflexiones y una demo real de como la trabajamos nosotros:
-- https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/blob/feature/informe/docs/presentaciones/ORT%20-%20Presentación%20de%20valor%20para%20la%20clase.pdf
+- https://github.com/ORT-FIS-2022S2/proyecto-martinez-fischer-larrosa/blob/main/docs/presentaciones/ORT%20-%20Presentación%20de%20valor%20para%20la%20clase.pdf

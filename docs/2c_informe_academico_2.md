@@ -9,6 +9,14 @@ Fecha, actividad, esfuerzo, responsable
 
 ## Presentación en clase
 
+### Video de la aplicacion
+
+A continuacion mostramos un video de como se ejecuta la aplicacion de este proyecto y las funcionalidades que cumple la misma
+
+[Video de la aplicacion](https://drive.google.com/file/d/1YrEGYMDrW0Yr8BVobTeZfr-6EYL1Du7G/view?usp=sharing)
+
+### Presentacion NODE JS
+
 Nosotros tuvimos que crear la presentacion de NodeJS, el cual fue utilizado en el proyecto.
 
 NodeJS es un entorno de ejecucion de JavaScript multiplataforma, de codigo abierto, asincronico y orientado a eventos. Los programas escritos en JS son compilados, optimizados e interpretados por la maquina virtual V8 de chrome.

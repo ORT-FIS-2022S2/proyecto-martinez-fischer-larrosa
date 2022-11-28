@@ -8,7 +8,7 @@ Por mi parte fui nuevo en esto. Nunca antes habia utilizado GitHub, Node JS, Mat
 Yo por mi parte fui mas hacia el trabajo sobre el frontend y la documentacion. Me encargue de diseñar la interfaz tratando de cumplir con todos los requisitos que se pedian, asi como el Material Design que fue lo que mas me costo trabajar. Ademas fui documentando que tecnicas habiamos aplicado y lo que fui haciendo yo como mis compañeros, los cuales trabajaron mas sobre los servicios y las funcionalidades, ya que ellos tenian mas experiencia en ello. Para estas tareas utilice las ramas feature/interfaz-base y feature/documentacion.
 
 ### Gonzalo Larrosa
-
+Esta parte del proyecto estuvo buena por lo que aprendimos y tambien por los desafios e investigacion que tuvimos a la hora de crear nuestra app, descaco el trabajo de mis compañeros que al afrontar el proyecto lo hicieron de una manera espectacular, todos aportamos nuestras ideas y dedicamos tiempo para poder sacarlo adelante. Me senti muy comodo en todo momento y aprendi tecnicas que hasta ahora no habia aplicado en facultad ni en el ambiente laboral.
 
 ### Gabriel Martinez
 

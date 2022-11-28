@@ -11,6 +11,11 @@ Yo por mi parte fui mas hacia el trabajo sobre el frontend y la documentacion. M
 Esta parte del proyecto estuvo buena por lo que aprendimos y tambien por los desafios e investigacion que tuvimos a la hora de crear nuestra app, descaco el trabajo de mis compañeros que al afrontar el proyecto lo hicieron de una manera espectacular, todos aportamos nuestras ideas y dedicamos tiempo para poder sacarlo adelante. Me senti muy comodo en todo momento y aprendi tecnicas que hasta ahora no habia aplicado en facultad ni en el ambiente laboral.
 
 ### Gabriel Martinez
+Pusimos en práctica la planificación teniendo en cuenta nuestra capacidad y tiempos para ejecutarlo. Aprendimos el uso de algunas herramientas y técnicas provechosas para el desarrollo como linters, generadores de documentación y testing. Trabajar de forma coordinada siguiendo las prácticas definidas en Git nos sirvió para poder incorporar los cambios con facilidad dividiendo las tareas de forma conveniente para el equipo.
+
+El testing cruzado realizado al final del proyecto con Issues de GitHub nos ayudó a ver como referencia otros proyectos y formas de resolver el problema realizados por otros compañeros.
+
+En general fue una experiencia positiva, muy práctica y con buenos enseñanzas a futuro.
 
 
 ### Historial de commits

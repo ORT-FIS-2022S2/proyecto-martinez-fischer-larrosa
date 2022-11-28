@@ -52,6 +52,12 @@ En general fue una experiencia positiva, muy práctica y con buenos enseñanzas 
 |Merge branch 'feature/integracion' into develop |21/11/2022 |Gonzalo Larrosa |
 |BS |21/11/2022 |Gonzalo Larrosa |
 |commit video |25/11/2022 |Juan Mateo Fischer |
+|commit documentacion individual Mateo y tecnicas |25/11/2022 |Juan Mateo Fischer |
+|Commit testing docu y reflexion Gonzalo |27/11/2022 |Juan Mateo Fischer |
+|Agregado aprendizajes |28/11/2022 |Gabriel Martinez |
+|commit documentaion final |28/11/2022 |Juan Mateo Fischer |
+
+
 
 
 ## Técnicas aplicadas y aprendizajes

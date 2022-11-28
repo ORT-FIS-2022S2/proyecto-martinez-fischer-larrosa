@@ -76,4 +76,6 @@ Dentro de todo lo que pudimos testear llegamos a:
 
 Con esto podemos decir que es necesaria una revision ya que hay varias issues de bugs que deberian ser revisadas ya que no cumplen con los requerimientos establecidos y tampoco son cosas que se considren correctas (como por ejemplo ingresar un resultado negativo). Tambien estaria bueno que se solucione la invalidez que registramos ya que no deja ingresar un campeonato con los campos en blanco pero si con solo espacios que es practicamente lo mismo.
 
-Ademas, logramos descubris algunos aspectos que pueden mejorar para que la aplicacion sea aun mejor, a pesar de que los compañeros realizaro un gran trabajo para lo que se pedia.
+Ademas, logramos descubris algunos aspectos que pueden mejorar para que la aplicacion sea aun mejor, a pesar de que los compañeros realizaron un gran trabajo para lo que se pedia.
+
+Como conclusion final podemos decir que la app realizada por los compañeros viene por buen camino y de corregir esos bugs y agregar ciertas mejoras va a quedar excelente para cualquiera que la desee usar.
